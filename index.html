@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spotify Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="#" class="logo"><i>♪</i>Spotify</a>
+  <div class="links"><a href="#plans">Premium</a><a href="#">Support</a><a href="#">Download</a></div>
+</nav>
+
+<div class="hero">
+  <h1>Music for everyone.</h1>
+  <p>Millions of songs. No credit card needed.</p>
+  <div class="btns">
+    <button class="pill" id="heroPremium">Start Listening</button>
+    <button class="pill white" onclick="document.getElementById('plans').scrollIntoView()">Explore Premium</button>
+  </div>
+</div>
+
+<main>
+  <h2>Popular playlists</h2>
+  <div class="grid" id="playlists"></div>
+
+  <h2 id="songsH">Trending songs</h2>
+  <div class="grid" id="songs"></div>
+
+  <h2 id="plans">Choose your plan</h2>
+  <div class="plans">
+    <div class="plan"><h3>Free</h3><div class="pr">₹0</div><ul><li>Ad-supported listening</li><li>Shuffle play</li><li>Good audio quality</li></ul><button class="pill white" data-plan>Get started</button></div>
+    <div class="plan best"><h3>Premium Individual</h3><div class="pr">₹119<small style="font-size:.9rem;font-weight:400">/month</small></div><ul><li>Ad-free music</li><li>Download to listen offline</li><li>Play songs in any order</li></ul><button class="pill" data-plan>Try 1 month free</button></div>
+    <div class="plan"><h3>Premium Student</h3><div class="pr">₹59<small style="font-size:.9rem;font-weight:400">/month</small></div><ul><li>Everything in Premium</li><li>Verified students only</li><li>Discounted price</li></ul><button class="pill white" data-plan>Get Student plan</button></div>
+  </div>
+</main>
+
+<footer>
+  <div class="cols">
+    <div><h4>Company</h4><a href="#">About</a><a href="#">Jobs</a><a href="#">For the Record</a></div>
+    <div><h4>Communities</h4><a href="#">For Artists</a><a href="#">Developers</a><a href="#">Advertising</a></div>
+    <div><h4>Useful links</h4><a href="#">Support</a><a href="#">Web Player</a><a href="#">Free Mobile App</a></div>
+    <div><h4>Legal</h4><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Cookies</a></div>
+  </div>
+  <p>© Spotify Clone — made for learning (HTML, CSS, JavaScript).</p>
+</footer>
+
+<div class="bar">
+  <div class="now"><div class="art" id="art">♪</div><div class="tt"><b id="tTitle">Nothing playing</b><span id="tArtist">Pick a song to start</span></div></div>
+  <div class="ctrl">
+    <div class="b"><button id="prevB">⏮</button><button class="pp" id="ppB">▶</button><button id="nextB">⏭</button></div>
+    <div class="prog"><span id="cur">0:00</span><div class="track"><div class="fill" id="fill"></div></div><span id="dur">0:30</span></div>
+  </div>
+  <div class="prev" id="status">                      </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
