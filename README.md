@@ -15,7 +15,7 @@ A Spotify-style music landing page with a working demo player, built using plain
 - Responsive landing page with sticky navbar and hero section
 - Popular playlists and trending songs shown as cards with gradient covers
 - Hover effect with a green play button on every card
-- Bottom player bar with play/pause, next/previous and a 30-second progress timer
+- Bottom player bar with play/pause
 - Pricing section (Free, Premium Individual, Premium Student)
 - Footer with link columns
 - Works on desktop and mobile (the player bar adjusts on small screens)
