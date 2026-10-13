@@ -37,40 +37,6 @@ spotify-clone/
 └── README.md
 ```
 
-## Getting Started
-
-**Run locally**
-
-```bash
-git clone https://github.com/Kartik-OO7/spotify-clone.git
-cd spotify-clone
-```
-
-Then either double-click `index.html`, or open the folder in VS Code and use **Open with Live Server** (Live Server extension).
-
-## How It Works
-
-- Playlists and songs are stored as arrays in `script.js` and rendered into cards with JavaScript.
-- Clicking a card sets it as the current track and starts a 30-second demo progress bar.
-- Play/pause, next and previous buttons control the same timer.
-
-## Customize
-
-- **Add songs:** edit the `songs` array in `script.js`, for example `["Song Name", "Artist"]`.
-- **Add playlists:** edit the `playlists` array (name and emoji).
-- **Change theme color:** update `--g` (Spotify green) in the CSS variables at the top of `style.css`.
-- **Real audio:** add an `<audio>` element and set its `src` inside the `tryPlay()` function.
-
-## Future Improvements
-
-- Real audio playback using the `<audio>` tag or a music API
-- Search bar and song filtering
-- Volume control and clickable seek bar
-- Liked songs saved in `localStorage`
-- Login and user accounts with a backend (Firebase or Node.js)
-
-## Author
-
 **Kartik** — [GitHub](https://github.com/Kartik-OO7)
 
 Made as a practice project while learning web development.
